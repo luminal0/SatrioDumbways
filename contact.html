@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="contact.css" />
+  </head>
+
+  <body>
+    <form>
+      <div>
+        <label for="input-name">Name</label>
+        <input id="input-name" type="text" required />
+      </div>
+
+      <div>
+        <label for="input-email">Email</label>
+        <input id="input-email" type="email" required />
+      </div>
+
+      <div>
+        <label for="input-phone">Phone Number</label>
+        <input id="input-phone" type="number" required />
+      </div>
+
+      <div>
+        <label for="input-subject">Subject</label>
+        <select id="input-subject" required size="auto">
+          <option value="" hidden>Select</option>
+          <option>Frontend</option>
+          <option>Backend</option>
+          <option>Fullstack</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="input-message">Your Message</label>
+        <textarea
+          id="input-message"
+          cols="50"
+          rows="5"
+          maxlength="500"
+        ></textarea>
+      </div>
+
+      <div>
+        <button>Submit</button>
+      </div>
+    </form>
+  </body>
+</html>
