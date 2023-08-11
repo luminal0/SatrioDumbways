@@ -1,4 +1,4 @@
-# Day 2 Test Satrio Coman Azizi @Dumbways.ID
+# Day 4 & 5 Test Satrio Coman Azizi @Dumbways.ID
 
-Making card with form and navbar
+Fixing Folder placing and Making JS for counting date
 # SatrioDumbways
