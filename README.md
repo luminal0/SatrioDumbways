@@ -1,8 +1,21 @@
-# Day 2 Test Satrio Coman Azizi @Dumbways.ID
+# Test Satrio Coman Azizi @Dumbways.ID
 
+# Day 1 Test
+First time learning HTML and CSS
+
+# Day 2 Test 
 Making card with form and navbar
 
-# Day 6 Test Satrio Coman Azizi @Dumbways.ID
+# Day 3 Test
+Making form with javascript
 
+# Day 4 Test 
+Creating blog Post
+
+# Day 5 Test
+Creating count post blog time duration
+
+# Day 6 Test Satrio Coman Azizi @Dumbways.ID
 Adding Burger menu and Responsive CSS
+
 # SatrioDumbways
