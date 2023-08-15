@@ -3,6 +3,7 @@
     <title>Buranyuuu</title>
     <link rel="icon" href="IMAGES/uh2igeqamjo91.gif" />
     <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/index.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -11,12 +12,17 @@
       referrerpolicy="no-referrer"
     />
   </head>
+
   <body>
     <nav>
       <div class="lefts">
         <ul>
           <li>
-            <img style="width: 100%" src="IMAGES/logo.png" alt="logo" />
+            <img
+              style="width: 100%; display: flex"
+              src="IMAGES/logo.png"
+              alt="logo"
+            />
           </li>
 
           <li>
@@ -31,13 +37,32 @@
       <div class="rights">
         <a href="contact.html">Contact</a>
       </div>
+
+      <div class="nav-right item-collapse">
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div class="nav-right" id="barsmenu">
+        <button
+          style="background-color: transparent; border: none; cursor: pointer;"
+          onclick="openHamburger();"
+        >
+          <i class="fa-2x fa-solid fa-bars"></i>
+        </button>
+      </div>
     </nav>
+
+    <div class="hamburger-nav-container" id="hamburger-nav-container">
+      <a href="index.html" class="hamburger-active">Home</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </div>
 
     <div class="container">
       <section>
         <div class="left">
           <h2>Welcome to My Profile</h2>
-          <p style="text-align: justify">
+          <p style="text-align: left">
             I'm like a cat on a sugar rush, a splash of rainbow energy, and a
             sprinkle of chaos all rolled into one! 🐾 When I'm not plotting
             world domination with my yarn ball army, I enjoy chasing laser
@@ -50,8 +75,7 @@
             <a href="#"
               >Download CV <i class="fa-solid fa-download fa-spin-pulse"></i
             ></a>
-
-            <div class="Sosmed" style="color:black">
+            <div class="Sosmed" style="color: black">
               <a href="https://www.linkedin.com/in/satriocomanazizi/"
                 ><i class="fa-brands fa-linkedin-in fa-2xl"></i
               ></a>
@@ -59,11 +83,16 @@
                 href="https://www.facebook.com/100091642425842/videos/1440120750082249"
                 ><i class="fa-brands fa-facebook-f fa-2xl"></i
               ></a>
-              <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram fa-2xl"></i></a>
-              <a href="https://twitter.com/home"><i class="fa-brands fa-x-twitter fa-2xl"></i></a>
+              <a href="https://www.instagram.com/"
+                ><i class="fa-brands fa-instagram fa-2xl"></i
+              ></a>
+              <a href="https://twitter.com/home"
+                ><i class="fa-brands fa-x-twitter fa-2xl"></i
+              ></a>
             </div>
           </div>
         </div>
+
         <div class="right">
           <img
             style="width: 100%"
@@ -75,6 +104,6 @@
         </div>
       </section>
     </div>
-    <footer style="text-align: center">Luminal 2023</footer>
+    <script src="js/hamburger.js"></script>
   </body>
 </html>

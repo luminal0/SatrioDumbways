@@ -1,0 +1,126 @@
+.container {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+}
+
+section {
+  display: flex;
+  width: 70%;
+  background-color: white;
+  margin: 90px auto;
+  width: 1100px;
+  padding: 70px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.left {
+  flex: 70%;
+  margin-right: 80px;
+  margin-top: 40px;
+}
+
+.button-contact {
+  display: flex;
+  justify-content: center;
+  width: 100px;
+  background-color: orangered;
+  color: white;
+  border-radius: 10px;
+  padding: 8px 10px;
+  cursor: pointer;
+}
+
+.Sosmed {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-top: 110px;
+  gap: 30px;
+}
+
+.right {
+  flex: 30%;
+  background-color: white;
+  border: 2px solid black;
+  justify-content: center;
+  margin: auto;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.item-collapse {
+  display: none;
+}
+
+@media only screen and (max-width: 900px) {
+  .container {
+    width: 90%;
+    margin: auto;
+    margin-top: 60px;
+  }
+
+  .right {
+    flex: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .left {
+    flex: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+}
+
+@media only screen and (max-width: 500px) {
+
+section {
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 69%;
+    padding: 40px;
+    flex: 100%;
+    margin-top: auto;
+    border: none;
+}
+
+    .left {
+        flex: 100%;
+        margin-right: 0px;
+        margin-top: 0px;
+    }
+    
+    .right {
+        flex: 100%;
+        margin: 0px;
+        margin-top: 20px;
+    }
+    
+    .Sosmed {
+        margin-top: 30px;
+    }
+
+    .item-collapse {
+      display: none;
+    }
+
+    .lefts {
+      display:none;
+    }
+
+    .rights {
+      display: none;
+    }
+  
+    #barsmenu {
+      display: block;
+    }
+
+
+}

@@ -4,8 +4,8 @@ function addBlog(event) {
   event.preventDefault();
 
   let title = document.getElementById("input-blog-title").value;
-  let startDate = document.getElementById("input-blog-startDate").value
-  let endDate = document.getElementById("input-blog-endDate").value
+  let startDate = document.getElementById("input-blog-startDate").value;
+  let endDate = document.getElementById("input-blog-endDate").value;
   let content = document.getElementById("input-blog-content").value;
   let image = document.getElementById("input-blog-image").files;
 

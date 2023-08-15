@@ -6,100 +6,92 @@
 }
 
 body {
-    margin: 0;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
+}                 
 nav {
-    background-color: lightgray;
-    display: flex;
-    align-items: center;
-    height: 10vh;
+  background-color: lightgray;
+  display: flex;
+  align-items: center;
+  height: 10vh;
 }
 
 nav ul {
-    display: flex;
-    list-style-type: none;
-    align-items: center;
+  display: flex;
+  list-style-type: none;
+  align-items: center;
 }
 
 nav ul li {
-    margin-right: 25px;
-    font-size: 20px;
-    display: flex;
+  margin-right: 25px;
+  font-size: 20px;
+  display: flex;
 }
 
 nav ul li .active {
-    color: orangered;
+  color: orangered;
 }
 
 .lefts {
-    flex: 50%;
+  flex: 50%;
 }
 
 .rights {
-    flex: 50%;
-    text-align:  end;
-    margin-right: 25px;
+  flex: 50%;
+  text-align: end;
+  margin-right: 25px;
 }
 
-.rights a{
-    background-color: orangered;
-    padding: 8px 20px;
-    color: white;
-    border-radius: 5px;
+.rights a {
+  background-color: orangered;
+  padding: 8px 20px;
+  color: white;
+  border-radius: 5px;
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-    height: 100%;
-    align-items: center;
+#barsmenu {
+  display: none;
 }
 
-section {
-    display: flex;
-    width: 70%;
-    background-color: white;
-    margin: 90px auto;
-    width: 1100px;
-    padding: 70px;
-    border: 2px solid black;
-    border-radius: 10px;
+.hamburger {
+  display: none;
 }
 
-.left {
-    flex: 70%;
-    margin-right: 80px;
-    margin-top: 40px;
+.hamburger a {
+  color: #000;
 }
 
-.button-contact {
-    display: flex;
-    justify-content: center;
-    width: 100px;
-    background-color: orangered;
-    color: white;
-    border-radius: 10px;
-    padding: 8px 10px  ;
-    cursor: pointer;
+.hamburger-nav-container {
+  font-size: 23px;
+  list-style-type: none;
+  display: none;
 }
 
-.Sosmed {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    margin-top: 110px;
-    gap: 30px;
+.hamburger-nav-container a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #9a9a9a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: 1px solid #fff;
 }
 
-.right {
-    flex: 30%;
-    background-color: white;
-    border: 2px solid black;
-    justify-content: center;
-    margin: auto;
-    padding: 20px;
-    border-radius: 15px;
+.hamburger-nav-container .hamburger-active {
+  text-decoration: none;
+  color: #fff;
+  background-color: orangered;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: 1px solid #fff;
+}
+
+.nav-right {
+  flex: 100%;
+  text-align: start;
+  margin-left: 25px;
 }
