@@ -15,7 +15,7 @@ Creating blog Post
 # Day 5 Test
 Creating count post blog time duration
 
-# Day 6 Test Satrio Coman Azizi @Dumbways.ID
+# Day 6 Test
 Adding Burger menu and Responsive CSS
 
 # SatrioDumbways
