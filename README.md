@@ -18,4 +18,7 @@ Creating count post blog time duration
 # Day 6 Test
 Adding Burger menu and Responsive CSS
 
+# Day 7 Test
+Learning OOP Concept
+
 # SatrioDumbways
