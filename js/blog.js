@@ -71,9 +71,10 @@ function renderBlog() {
                         ${dataBlog[index].content}
                         </div>
                         <div>
-                          <i class="fa-brands fa-google-play"></i>
-                          <i class="fa-brands fa-android"></i>
-                          <i class="fa-brands fa-java"></i>
+                        <i class="fa-brands fa-windows"></i>
+                        <i class="fa-brands fa-android"></i>
+                        <i class="fa-brands fa-apple"></i>
+                        <i class="fa-brands fa-linux"></i>
                         </div>
                         <div class="ctn-btn">
                             <div class="btn-left">

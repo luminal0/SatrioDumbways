@@ -10,7 +10,8 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}                 
+}  
+               
 nav {
   background-color: lightgray;
   display: flex;
@@ -104,7 +105,7 @@ nav ul li .active {
 }
 
 .testimonial img {
-  height: 200px;
+  height: 300px;
   width: 100%;
   object-fit: cover;
 }
@@ -123,6 +124,23 @@ nav ul li .active {
 
 .profile-testimonial {
   width: 100%;
+}
+
+.container-rating {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rating-btn {
+  margin: 20px;
+  padding: 0px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  border-radius: 20px
 }
 
 @media only screen and (max-width: 900px) {

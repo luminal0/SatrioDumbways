@@ -1,92 +1,88 @@
-class Testimonial {
-    #quote = "";
-    #image = "";
-  
-    constructor(quote, image) {
-      this.#quote = quote;
-      this.#image = image;
-    }
-  
-    get quote() {
-      return this.#quote;
-    }
-  
-    get image() {
-      return this.#image;
-    }
-  
-    get author() {
-      throw new Error("getAuthor() method must be implemented.");
-    }
-  
-    get testimonialHTML() {
-      return `
-          <div class="testimonial">
-              <img src="${this.image}" class="profile-testimonial" />
-              <p class="quote">
-                  ${this.quote}
-              </p>
-              <p class="author">- ${this.author}</p>
-          </div>
-      `;
-    }
-  }
-  
-  class AuthorTestimonial extends Testimonial {
-    #author = "";
-  
-    constructor(author, quote, image) {
-      super(quote, image);
-      this.#author = author;
-    }
-  
-    get author() {
-      return this.#author;
-    }
-  }
-  
-  class CompanyTestimonial extends Testimonial {
-    #company = "";
-  
-    constructor(author, quote, image) {
-      super(quote, image);
-      this.#company = author;
-    }
-  
-    get author() {
-      return this.#company + " Company";
-    }
-  }
-  
-  const testimonial1 = new AuthorTestimonial(
-    "Satrio Coman Azizi",
-    "Mantap sekali jasanya!",
-    "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bWFufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-  );
-  
-  const testimonial2 = new AuthorTestimonial(
-    "Cintara Surya",
-    "Keren lah pokoknya",
-    "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bWFufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-  );
-  
-  const testimonial3 = new AuthorTestimonial(
-    "Maul",
-    "Wuhu keren cuy!",
-    "https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8bWFufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
-  );
-  
-  const testimonial4 = new AuthorTestimonial(
-    "Rangga",
-    "Wuhu keren banget!",
-    "images/ff175dramjo91.gif"
-  );
-  
-  let testimonialData = [testimonial1, testimonial2, testimonial3, testimonial4];
+const testimonialData = [
+  {
+    author: "Satrio Coman Azizi",
+    quote: "Buranyuuuuuu",
+    image:
+      "https://media.tenor.com/hFF7PF8xvN4AAAAi/neco-arc-taunt.gif",
+    rating: 5,
+  },
+  {
+    author: "Neco Arc 1",
+    quote: "NYAGHHHH",
+    image:
+      "https://media.tenor.com/hGlXXpLIlq0AAAAi/neco-arc-taunt.gif",
+    rating: 4,
+  },
+  {
+    author: "Neco Arc 2",
+    quote: "Dori Dori Dori",
+    image:
+      "https://media.tenor.com/ayAkes0hk-0AAAAi/neco-arc.gif",
+    rating: 4,
+  },
+  {
+    author: "Neco Arc 3",
+    quote: "Buranyuuuuuuuuu",
+    image:
+      "https://i.redd.it/9osv7lqamjo91.gif",
+    rating: 1,
+  },
+  {
+    author: "Neco Arc 4",
+    quote: "JELEGHHH",
+    image:
+      "https://preview.redd.it/neko-arc-gifs-v0-4ur8wlpamjo91.gif?width=512&auto=webp&s=99ced62cb0574efeda870c31f264e05c17ed831e",
+    rating: 2,
+  },
+  {
+    author: "Neco Arc 4",
+    quote: "AAAAAAAAAAAAAAAA",
+    image:
+      "https://i.redd.it/z71y9hqamjo91.gif",
+    rating: 3,
+  },
+];
+
+function allTestimonials() {
   let testimonialHTML = "";
-  
-  for (let i = 0; i < testimonialData.length; i++) {
-    testimonialHTML += testimonialData[i].testimonialHTML;
-  }
-  
+
+  testimonialData.forEach(function (item) {
+    testimonialHTML += `
+    <div class="testimonial">
+      <img src="${item.image}" class="profile-testimonial" />
+      <p class="quote">${item.quote}</p>
+      <p class="author">- ${item.author}</p>
+      <p class="author">${item.rating}<i class="fa-solid fa-star"></i></p>
+    </div>
+    `;
+  });
+
   document.getElementById("testimonials").innerHTML = testimonialHTML;
+}
+
+allTestimonials();
+
+function filterTestimonials(rating) {
+  let testimonialHTML = "";
+
+  const testimonialFiltered = testimonialData.filter(function (item) {
+    return item.rating === rating;
+  });
+
+  if (testimonialFiltered.length === 0) {
+    testimonialHTML = `<h1>Data not found!</h1>`;
+  } else {
+    testimonialFiltered.forEach(function (item) {
+      testimonialHTML += `
+      <div class="testimonial">
+        <img src="${item.image}" class="profile-testimonial" />
+        <p class="quote">${item.quote}</p>
+        <p class="author">- ${item.author}</p>
+        <p class="author">${item.rating}<i class="fa-solid fa-star"></i></p>
+      </div>
+      `;
+    });
+  }
+
+  document.getElementById("testimonials").innerHTML = testimonialHTML;
+}
