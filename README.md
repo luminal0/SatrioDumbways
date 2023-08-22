@@ -21,4 +21,10 @@ Adding Burger menu and Responsive CSS
 # Day 7 Test
 Learning OOP Concept
 
+# Day 8 Test
+HOF and Callbacks
+
+# Day 9 Test
+Getting data from ajax and put it on testimonials
+
 # SatrioDumbways
