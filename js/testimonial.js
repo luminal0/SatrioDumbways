@@ -43,6 +43,7 @@ const testimonialData = [
   },
 ];
 
+
 function allTestimonials() {
   let testimonialHTML = "";
 
